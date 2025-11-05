@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* ANCHOR CUSTOM THEME ------------------------------------------------------------------- */
+
+@theme {
+  /* NOTE BREAKPOINTS ----------------------------------- */
+  --breakpoint-sm: 30rem; /* 480px */
+  --breakpoint-md: 48rem; /* 768px */
+  --breakpoint-lg: 64rem; /* 1024px */
+  --breakpoint-xl: 90rem; /* 1440px */
+
+  /* NOTE TYPEFACES ----------------------------------- */
+  --font-heading: "Schibsted Grotesk", sans-serif;
+  --font-body: "Schibsted Grotesk", sans-serif;
+
+  /* NOTE LINE HEIGHT ----------------------------------- */
+  --leading-tight: 0.90;
+  --leading-default: 1;
+  --leading-normal: 1.25;
+  --leading-loose: 1.4;
+
+  /* NOTE BORDER RADIUS ---------------------------------- */
+  --radius-none: 0rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 2rem;
+  --radius-2xl: 4rem;
+  --radius-full: 900px;
+
+  /* NOTE SHADOWS ----------------------------------------- */
+  --shadow-sm: 0 4px 12px 0 rgb(0 0 0 / 0.04);
+  --shadow-md: 0 8px 24px 0px rgb(0 0 0 / 0.04);
+  --shadow-lg: 0 16px 36px -4px rgb(0 0 0 / 0.04);
+  --shadow-xl: 0 24px 48px -4px rgb(0 0 0 / 0.04);
+  --shadow-2xl: 0 32px 56px -4px rgb(0 0 0 / 0.08);
+}
+
+/* ANCHOR DARK THEME TRIGGER ------------------------------------------------------------------- */
+
+@custom-variant dark (&:is(.dark *));
+
+/* ANCHOR COLORS / LIGHT ------------------------------------------------------------------- */
+
+@theme inline {
+  --color-base-100: var(--base-100);
+  --color-base-200: var(--base-200);
+  --color-base-300: var(--base-300);
+  --color-on-base-alt: var(--on-base-alt);
+  --color-on-base: var(--on-base);
+  --color-base-inverse: var(--base-inverse);
+  --color-on-base-inverse: var(--on-base-inverse);
+
+  --color-muted: var(--muted);
+  --color-on-muted: var(--on-muted);
+  --color-muted-alt: var(--muted-alt);
+  --color-on-muted-alt: var(--on-muted-alt);
+  --color-muted-inverse: var(--muted-inverse);
+  --color-on-muted-inverse: var(--on-muted-inverse);
+
+  --color-primary: var(--primary);
+  --color-on-primary: var(--on-primary);
+  --color-primary-alt: var(--primary-alt);
+  --color-on-primary-alt: var(--on-primary-alt);
+  --color-primary-inverse: var(--primary-inverse);
+  --color-on-primary-inverse: var(--on-primary-inverse);
+
+  --color-error-destructive: var(--error-destructive);
+  --color-on-error-destructive: var(--on-error-destructive);
+  --color-error: var(--error);
+  --color-on-error: var(--on-error);
+
+  --color-success: var(--success);
+  --color-on-success: var(--on-success);
+
+  
+
+}
+
+/* ANCHOR COLOR PALETTES / light ------------------------------------------------------------------- */
+:root {
+  --base-100: var(--color-slate-50);
+  --base-200: var(--color-slate-100);
+  --base-300: var(--color-slate-200);
+  --on-base-alt: var(--color-slate-600);
+  --on-base: var(--color-slate-900);
+  --base-inverse: var(--color-slate-900);
+  --on-base-inverse: var(--color-slate-100);
+
+  --muted: var(--color-slate-900);
+  --on-muted: var(--color-white);
+  --muted-alt: var(--color-slate-300);
+  --on-muted-alt: var(--color-slate-800);
+  --muted-inverse: var(--color-slate-700);
+  --on-muted-inverse: var(--color-slate-50);
+
+  --primary: oklch(0.208 0.042 265.755);
+  --on-primary: var(--color-white);
+  --primary-alt: var(--color-blue-200);
+  --on-primary-alt: var(--color-blue-800);
+  --primary-inverse: var(--color-blue-700);
+  --on-primary-inverse: var(--color-blue-50);
+
+  --error-destructive: var(--color-red-600);
+  --on-error-destructive: var(--color-white);
+  --error: var(--color-red-200);
+  --on-error: var(--color-red-800);
+
+  --success: var(--color-green-200);
+  --on-success: var(--color-green-800);
+
+}
+
+/* ANCHOR COLOR PALETTES / dark ------------------------------------------------------------------- */
+.dark {
+  --base-100: var(--color-slate-950);
+  --base-200: var(--color-slate-900);
+  --base-300: var(--color-slate-800);
+  --on-base-alt: var(--color-slate-400);
+  --on-base: var(--color-slate-50);
+  --base-inverse: var(--color-slate-600);
+  --on-base-inverse: var(--color-slate-50);
+
+  --muted: oklch(0.279 0.041 260.031);
+  --on-muted: var(--color-slate-900);
+  --muted-alt: var(--color-slate-700);
+  --on-muted-alt: var(--color-slate-50);
+  --muted-inverse: var(--color-slate-700);
+  --on-muted-inverse: var(--color-slate-50);
+
+  --primary: oklch(0.929 0.013 255.508);
+  --on-primary: var(--color-blue-950);
+  --primary-alt: var(--color-blue-900);
+  --on-primary-alt: var(--color-blue-300);
+  --primary-inverse: var(--color-blue-900);
+  --on-primary-inverse: var(--color-blue-50);
+
+  --error-destructive: var(--color-red-300);
+  --on-error-destructive: var(--color-red-950);
+  --error: var(--color-red-900);
+  --on-error: var(--color-red-300);
+
+  --success: var(--color-green-900);
+  --on-success: var(--color-green-300);
+
+}
+
+
+/* ANCHOR STYLES BASE ------------------------------------------------------------------- */
+
+@layer base {
+  body {
+    @apply bg-base-100 text-on-base-alt;
+  }
+
+  header, main, footer {
+    @apply px-4 md:px-5 xl:px-7;
+  }
+}
+
+/* ANCHOR UTILITIES ------------------------------------------------------------------- */
+
+/* NOTE GRADIENTS --------------------------- */
+@utility gradient-muted {
+  @apply bg-linear-to-t from-50% to-100% from-muted to-muted-inverse
+
+}
+
+/* NOTE FOCUS STATE --------------------------- */
+@utility focus-state {
+  @apply focus-visible:ring-2 focus-visible:ring-muted focus-visible:outline-0 focus-visible:ring-offset-[3px] focus-visible:ring-offset-muted-alt;
+
+}
+
+/* NOTE FONT -> Headings ----------------------- */
+@utility font-display-1 {
+  @apply text-5xl font-heading leading-14 font-bold md:text-[3.5rem];
+}
+@utility font-display-2 {
+  @apply text-[2.5rem] font-heading leading-12 font-bold md:text-5xl;
+}
+@utility font-h1 {
+  @apply text-4xl font-heading leading-11 font-bold md:text-[2.5rem];
+}
+@utility font-h2 {
+  @apply text-[1.75rem] font-heading leading-8 font-semibold md:text-[2rem];
+}
+@utility font-h3 {
+  @apply text-2xl font-heading leading-7 font-semibold md:text-[1.75rem];
+}
+
+/* NOTE FONT -> Body ----------------------- */
+@utility font-body-l {
+  @apply text-xl font-body leading-7 font-normal;
+}
+@utility font-body-l-bold {
+  @apply text-xl font-body leading-7 font-bold;
+}
+@utility font-body-m {
+  @apply text-lg font-body leading-6 font-normal;
+}
+@utility font-body-m-bold {
+  @apply text-lg font-body leading-6 font-bold;
+}
+@utility font-body-base {
+  @apply text-base font-body leading-5 font-normal;
+}
+@utility font-body-base-bold {
+  @apply text-base font-body leading-5 font-semibold;
+}
+@utility font-body-s {
+  @apply text-sm font-body leading-4 font-normal;
+}
+@utility font-body-s-bold {
+  @apply text-sm font-body leading-4 font-semibold;
+}
+@utility font-body-xs {
+  @apply text-xs font-body leading-4 font-normal;
+}
+@utility font-body-xs-bold {
+  @apply text-xs font-body leading-4 font-bold;
+}
+
+/* NOTE CONTAINER -> Flex ----------------------- */
+@utility container-full {
+  @apply relative flex w-full flex-col items-stretch;
+}
+
+/* NOTE PERFECT CENTER --------------------------- */
+@utility perfect-center {
+  @apply flex items-center justify-center;
+}
+
+/* NOTE ABSOLUTE CENTER ---------------------------- */
+@utility absolute-center {
+  @apply top-1/2 left-1/2 translate-[-50%];
+}
+
+/* NOTE IMG RESPONSIVE ---------------------------- */
+@utility img-responsive {
+  @apply w-full h-full object-cover;
+}
