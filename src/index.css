@@ -198,7 +198,7 @@
 
 }
 @utility gradient-primary {
-  @apply bg-linear-to-t from-50% to-100% from-primary to-primary-inverse;
+  @apply bg-linear-to-t from-50% to-100% from-primary to-rose-500;
 
 }
 

@@ -15,6 +15,8 @@ const buttonVariants = cva(
       variant: {
         default:
           "rounded-full gradient-muted text-on-muted hover:bg-muted/80 not-dark:shadow-sm not-dark:shadow-muted/30 not-dark:hover:shadow-md not-dark:hover:shadow-muted/20 not-dark:active:shadow-sm not-dark:active:shadow-muted/40 ring-4 ring-muted/10",
+        primary:
+          "rounded-full gradient-primary text-on-primary hover:bg-primary/80 not-dark:shadow-sm not-dark:shadow-primary/30 not-dark:hover:shadow-md not-dark:hover:shadow-primary/20 not-dark:active:shadow-sm not-dark:active:shadow-primary/40 ring-4 ring-primary/10",
         secondary: "rounded-full bg-muted-alt text-on-muted-alt hover:bg-muted-alt/80",
         outline: "border border-muted text-on-base rounded-full",
         ghost: "text-on-base hover:underline hover:underline-offset-2",
