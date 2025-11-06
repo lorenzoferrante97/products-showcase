@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
 
 @import "tailwindcss";
 @import "tw-animate-css";
@@ -13,7 +14,7 @@
   --breakpoint-xl: 90rem; /* 1440px */
 
   /* NOTE TYPEFACES ----------------------------------- */
-  --font-heading: "Schibsted Grotesk", sans-serif;
+  --font-heading: "Climate Crisis", sans-serif;
   --font-body: "Schibsted Grotesk", sans-serif;
 
   /* NOTE LINE HEIGHT ----------------------------------- */
@@ -76,33 +77,42 @@
   --color-success: var(--success);
   --color-on-success: var(--on-success);
 
+  /* e-commerce colors */
+  --color-rating: var(--rating);
+  --color-on-rating: var(--on-rating);
+
+  --color-stock-danger: var(--stock-danger);
+  --color-on-stock-danger: var(--on-stock-danger);
+  --color-stock-safe: var(--stock-safe);
+  --color-on-stock-safe: var(--on-stock-safe);
+
   
 
 }
 
 /* ANCHOR COLOR PALETTES / light ------------------------------------------------------------------- */
 :root {
-  --base-100: var(--color-slate-50);
-  --base-200: var(--color-slate-100);
-  --base-300: var(--color-slate-200);
-  --on-base-alt: var(--color-slate-600);
-  --on-base: var(--color-slate-900);
-  --base-inverse: var(--color-slate-900);
-  --on-base-inverse: var(--color-slate-100);
+  --base-100: var(--color-stone-50);
+  --base-200: var(--color-stone-100);
+  --base-300: var(--color-stone-200);
+  --on-base-alt: var(--color-stone-600);
+  --on-base: var(--color-stone-900);
+  --base-inverse: var(--color-stone-900);
+  --on-base-inverse: var(--color-stone-100);
 
-  --muted: var(--color-slate-900);
+  --muted: var(--color-stone-900);
   --on-muted: var(--color-white);
-  --muted-alt: var(--color-slate-300);
-  --on-muted-alt: var(--color-slate-800);
-  --muted-inverse: var(--color-slate-700);
-  --on-muted-inverse: var(--color-slate-50);
+  --muted-alt: var(--color-stone-300);
+  --on-muted-alt: var(--color-stone-800);
+  --muted-inverse: var(--color-stone-700);
+  --on-muted-inverse: var(--color-stone-50);
 
-  --primary: oklch(0.208 0.042 265.755);
+  --primary: var(--color-rose-600);
   --on-primary: var(--color-white);
-  --primary-alt: var(--color-blue-200);
-  --on-primary-alt: var(--color-blue-800);
-  --primary-inverse: var(--color-blue-700);
-  --on-primary-inverse: var(--color-blue-50);
+  --primary-alt: var(--color-rose-200);
+  --on-primary-alt: var(--color-rose-800);
+  --primary-inverse: var(--color-rose-800);
+  --on-primary-inverse: var(--color-rose-200);
 
   --error-destructive: var(--color-red-600);
   --on-error-destructive: var(--color-white);
@@ -112,31 +122,41 @@
   --success: var(--color-green-200);
   --on-success: var(--color-green-800);
 
+  /* e-commerce colors */
+  --rating: var(--color-amber-400);
+  --on-rating: var(--color-amber-950);
+
+  --stock-danger: var(--color-orange-200);
+  --on-stock-danger: var(--color-orange-800);
+  --stock-safe: var(--color-lime-200);
+  --on-stock-safe: var(--color-lime-800);
+
+
 }
 
 /* ANCHOR COLOR PALETTES / dark ------------------------------------------------------------------- */
 .dark {
-  --base-100: var(--color-slate-950);
-  --base-200: var(--color-slate-900);
-  --base-300: var(--color-slate-800);
-  --on-base-alt: var(--color-slate-400);
-  --on-base: var(--color-slate-50);
-  --base-inverse: var(--color-slate-600);
-  --on-base-inverse: var(--color-slate-50);
+  --base-100: var(--color-stone-950);
+  --base-200: var(--color-stone-900);
+  --base-300: var(--color-stone-800);
+  --on-base-alt: var(--color-stone-400);
+  --on-base: var(--color-stone-50);
+  --base-inverse: var(--color-stone-600);
+  --on-base-inverse: var(--color-stone-50);
 
-  --muted: oklch(0.279 0.041 260.031);
-  --on-muted: var(--color-slate-900);
-  --muted-alt: var(--color-slate-700);
-  --on-muted-alt: var(--color-slate-50);
-  --muted-inverse: var(--color-slate-700);
-  --on-muted-inverse: var(--color-slate-50);
+  --muted: var(--color-stone-50);
+  --on-muted: var(--color-stone-900);
+  --muted-alt: var(--color-stone-700);
+  --on-muted-alt: var(--color-stone-50);
+  --muted-inverse: var(--color-stone-700);
+  --on-muted-inverse: var(--color-stone-50);
 
-  --primary: oklch(0.929 0.013 255.508);
-  --on-primary: var(--color-blue-950);
-  --primary-alt: var(--color-blue-900);
-  --on-primary-alt: var(--color-blue-300);
-  --primary-inverse: var(--color-blue-900);
-  --on-primary-inverse: var(--color-blue-50);
+  --primary: var(--color-rose-300);
+  --on-primary: var(--color-rose-950);
+  --primary-alt: var(--color-rose-900);
+  --on-primary-alt: var(--color-rose-300);
+  --primary-inverse: var(--color-rose-900);
+  --on-primary-inverse: var(--color-rose-50);
 
   --error-destructive: var(--color-red-300);
   --on-error-destructive: var(--color-red-950);
@@ -145,6 +165,15 @@
 
   --success: var(--color-green-900);
   --on-success: var(--color-green-300);
+
+  /* e-commerce colors */
+  --rating: var(--color-amber-900);
+  --on-rating: var(--color-amber-400);
+
+  --stock-danger: var(--color-orange-900);
+  --on-stock-danger: var(--color-orange-200);
+  --stock-safe: var(--color-lime-900);
+  --on-stock-safe: var(--color-lime-200);
 
 }
 
@@ -168,6 +197,10 @@
   @apply bg-linear-to-t from-50% to-100% from-muted to-muted-inverse
 
 }
+@utility gradient-primary {
+  @apply bg-linear-to-t from-50% to-100% from-primary to-primary-inverse;
+
+}
 
 /* NOTE FOCUS STATE --------------------------- */
 @utility focus-state {
@@ -183,13 +216,13 @@
   @apply text-[2.5rem] font-heading leading-12 font-bold md:text-5xl;
 }
 @utility font-h1 {
-  @apply text-4xl font-heading leading-11 font-bold md:text-[2.5rem];
+  @apply text-4xl font-body leading-11 font-bold md:text-[2.5rem];
 }
 @utility font-h2 {
-  @apply text-[1.75rem] font-heading leading-8 font-semibold md:text-[2rem];
+  @apply text-[1.75rem] font-body leading-8 font-semibold md:text-[2rem];
 }
 @utility font-h3 {
-  @apply text-2xl font-heading leading-7 font-semibold md:text-[1.75rem];
+  @apply text-2xl font-body leading-7 font-semibold md:text-[1.75rem];
 }
 
 /* NOTE FONT -> Body ----------------------- */
@@ -221,7 +254,7 @@
   @apply text-xs font-body leading-4 font-normal;
 }
 @utility font-body-xs-bold {
-  @apply text-xs font-body leading-4 font-bold;
+  @apply text-xs font-body leading-4 font-semibold;
 }
 
 /* NOTE CONTAINER -> Flex ----------------------- */
