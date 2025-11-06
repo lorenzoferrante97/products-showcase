@@ -17,7 +17,7 @@ function App() {
         {/* ANCHOR LOGIN / REGISTER ------------------------------------------ */}
 
         {/* ANCHOR ROUTES PUBBLICHE ------------------------------------------ */}
-        <Route element={<AppLayout />} path='/'>
+        <Route element={<AppLayout />}>
           <Route element={<Home />} index />
         </Route>
 
