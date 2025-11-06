@@ -8,7 +8,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
-import usePersistStore from "@/store/persistStore/store"
+import usePersistStore from "@/stores/persist/store"
 
 export default function ThemeDropdown() {
   const activeTheme = usePersistStore((s) => s.activeTheme)
@@ -48,9 +48,7 @@ export default function ThemeDropdown() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <button
-          className='bg-neutral-200 rounded-md size-8 flex items-center justify-center relative'
-          type='button'>
+        <button className='rounded-full size-8 aspect-square perfect-center relative' type='button'>
           {themeIcon}
           <span className='sr-only'>Cambia tema</span>
         </button>
