@@ -6,43 +6,45 @@ export default function Home() {
       {/* ANCHOR HERO SECTION ------------------------------------------------------- */}
       <section className='flex flex-col gap-5 md:flex-row w-full lg:w-[72vw] mx-auto'>
         {/* NOTE - hero images */}
-        <div className='max-md:w-fit md:w-[44vw] flex items-center justify-start -space-x-[20vw] md:flex-col md:justify-start md:items-start md:-space-y-[60px] md:order-last'>
-          <div className='w-full flex items-center justify-start lg:justify-center -space-x-[20vw] md:-space-x-[10vw] lg:-space-x-[6vw]'>
-            <MaskImage
-              alt='prodotto in evidenza'
-              borderSize='p-1 sm:p-1.5 md:p-2'
-              className='w-full lg:max-w-[180px] drop-shadow-xl drop-shadow-on-base/10'
-              mask='circle'
-              src='/images/Hero.webp'
-            />
-            <MaskImage
-              alt='prodotto in evidenza'
-              borderSize='p-1 sm:p-1.5 md:p-2'
-              className='w-full lg:max-w-[180px] drop-shadow-xl drop-shadow-on-base/10'
-              mask='circle'
-              src='/images/Hero 2.webp'
-            />
+        <div className='w-fit flex items-center justify-start -space-x-[20vw] md:flex-col md:justify-start md:items-start md:-space-y-[40px] md:order-last'>
+          <div className='w-full flex items-center justify-start lg:justify-center -space-x-[20vw] md:-space-x-[4vw] lg:-space-x-[6vw]'>
+            <figure className='w-full aspect-square rounded-xl outline-4 outline-white not-dark:shadow-xl not-dark:shadow-on-base/10 lg:max-w-[180px] overflow-hidden -rotate-6'>
+              <img
+                alt="'prodotto in evidenza'"
+                className='img-responsive'
+                src='/images/Hero.webp'
+              />
+            </figure>
+
+            <figure className='w-full aspect-square rounded-xl outline-4 outline-white not-dark:shadow-xl not-dark:shadow-on-base/10 lg:max-w-[180px] overflow-hidden rotate-6'>
+              <img
+                alt="'prodotto in evidenza'"
+                className='img-responsive'
+                src='/images/Hero 2.webp'
+              />
+            </figure>
           </div>
-          <div className='w-full flex items-center justify-start lg:justify-center -space-x-[20vw] md:-space-x-[10vw] lg:-space-x-[6vw]'>
-            <MaskImage
-              alt='prodotto in evidenza'
-              borderSize='p-1 sm:p-1.5 md:p-2'
-              className='w-full lg:max-w-[180px] drop-shadow-xl drop-shadow-on-base/10'
-              mask='circle'
-              src='/images/Hero 3.webp'
-            />
-            <MaskImage
-              alt='prodotto in evidenza'
-              borderSize='p-1 sm:p-1.5 md:p-2'
-              className='w-full lg:max-w-[180px] drop-shadow-xl drop-shadow-on-base/10'
-              mask='circle'
-              src='/images/Hero 4.webp'
-            />
+          <div className='w-full flex items-center justify-start lg:justify-center -space-x-[20vw] md:-space-x-[4vw] lg:-space-x-[6vw]'>
+            <figure className='w-full aspect-square rounded-xl outline-4 outline-white not-dark:shadow-xl not-dark:shadow-on-base/10 lg:max-w-[180px] overflow-hidden -rotate-6'>
+              <img
+                alt="'prodotto in evidenza'"
+                className='img-responsive'
+                src='/images/Hero 3.webp'
+              />
+            </figure>
+
+            <figure className='w-full aspect-square rounded-xl outline-4 outline-white not-dark:shadow-xl not-dark:shadow-on-base/10 lg:max-w-[180px] overflow-hidden rotate-6'>
+              <img
+                alt="'prodotto in evidenza'"
+                className='img-responsive'
+                src='/images/Hero 4.webp'
+              />
+            </figure>
           </div>
         </div>
 
         {/* NOTE - hero content */}
-        <div className='md:w-full perfect-center'>
+        <div className='lg:w-full perfect-center'>
           <h1 className='font-display-2 text-on-base text-balance'>
             I <span className='text-primary'>prodotti</span> che ami in un unico posto
           </h1>
@@ -51,5 +53,3 @@ export default function Home() {
     </>
   )
 }
-
-// outline-8 outline-white not-dark:shadow-md not-dark:shadow-on-base/20
