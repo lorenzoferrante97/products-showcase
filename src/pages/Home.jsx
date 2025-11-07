@@ -1,3 +1,4 @@
+import { ChevronsDown } from "lucide-react"
 import MaskImage from "@/components/other/MaskImage"
 import { Button } from "@/components/ui/button"
 
@@ -51,6 +52,7 @@ export default function Home() {
           </h1>
           <Button size='default' variant='primary'>
             Vai ai prodotti
+            <ChevronsDown className='size-4' strokeWidth={2} />
           </Button>
         </div>
       </section>
